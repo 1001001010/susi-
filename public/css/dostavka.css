@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #333;
+    font-family: "Kurale", serif;
+    font-size: 0.94em;
+    line-height: 135%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 100%;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+hr {
+}
+a:hover {
+    color: #963c3c;
+    text-decoration: none;
+}
+.container {
+    margin: 30px auto 0;
+    width: 84%;
+    max-width: 1920px;
+    align-content: center;
+}
+/* -------------------------------
+    Шапка сайта
+    ----------------------------------*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav-scroller {
+}
+
+.link-nav {
+    margin-right: 30px;
+    font-size: 20px;
+    color: black;
+}
+
+.o_nas {
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(254, 65, 17);
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    height: 45px;
+    font-family: "Kurale", serif;
+}
+
+.o_nas:hover {
+    background-color: rgb(133, 35, 10);
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+.blok {
+    min-width: 180px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.logotip_sushi {
+    height: 90px;
+    width: 180px;
+}
+
+.header-icons {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+}
+
+.water {
+    margin: 0 5px;
+}
+
+input {
+    padding: 4px 10px;
+    border: 0;
+    font-size: 18px;
+    width: 200px;
+    border: 1px solid rgba(254, 65, 17, 0.5);
+    border-radius: 5px;
+    font-family: "Kurale", serif;
+}
+
+.er-1 {
+    flex-direction: column;
+    justify-content: center;
+}
+.er-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.er-3 {
+    flex-grow: 2;
+}
+.blue {
+    color: rgb(00, 163, 136);
+}
+
+.search {
+    border: 1px solid rgb(78, 78, 78);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.lupka {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    background-image: url(../media/lupka.png);
+    color: #ffffff;
+}
+/* -------------------------------
+    Главный контент
+    ----------------------------------*/
+
+.main {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 100%;
+}
+.okno {
+    margin: 30px auto;
+    width: 90%;
+    border-radius: 15px;
+    max-width: 1440px;
+    align-content: center;
+    background-color: #ffffff;
+}
+.twix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.dos {
+    width: 60%;
+}
+.verh {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 100%;
+    color: #000;
+}
+.orange {
+    color: rgb(254, 65, 17);
+}
+.plus {
+    background-color: rgb(254, 65, 17);
+    padding: 11px;
+    border: none;
+    border-radius: 12px;
+}
+.tel {
+    -moz-appearance: textfield;
+}
+.tel::-webkit-inner-spin-button {
+    display: none;
+}
+.tel::-webkit-outer-spin-button,
+.no-arrow::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.zag {
+    margin: 45px;
+    display: block;
+    text-align: center;
+}
+.mini_zag {
+    margin: 30px;
+    display: block;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 100%;
+}
+.h3 {
+    display: flex;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 100%;
+}
+.kogda {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 100%;
+    margin: 15px;
+}
+.zakaz {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 40px auto;
+    width: 90%;
+    border: 2px solid rgb(254, 65, 17);
+    border-radius: 25px;
+}
+.menshe {
+    font-size: 18px;
+    flex-grow: 2;
+}
+.add {
+    flex-grow: 1;
+}
+.bok {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stroki {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 95%;
+    border-radius: 25px;
+}
+.stroka {
+    width: 80%;
+    margin: 10px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.vibor {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    width: 100%;
+}
+.comm {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    width: 80%;
+}
+.com {
+    width: 100%;
+}
+.area {
+    width: 100%;
+    min-height: 80px;
+    border-color: rgb(254, 65, 17);
+    border-radius: 10px;
+    resize: none;
+    font-size: 18px;
+    color: #333;
+    font-family: "Kurale", serif;
+    outline: none;
+}
+.span {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 5px;
+    color: black;
+    font-size: 18px;
+}
+.right {
+    align-items: flex-end;
+}
+.stroka-btn input[type="radio"] {
+    display: none;
+}
+/* Checked */
+.stroka-btn input[type="radio"]:checked + label {
+    background: #ffe0a6;
+}
+
+/* Hover */
+.stroka-btn label:hover {
+    color: #666;
+}
+
+.stroka-btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border-radius: 6px;
+    user-select: none;
+}
+.micro {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.65);
+    margin-right: 15px;
+}
+.text {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+label {
+    font-size: 24px;
+}
+.kir {
+    margin: 3px 0;
+}
+.but {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    font-size: 18px;
+    background-color: rgb(254, 65, 17);
+    color: #ffffff;
+    border-radius: 15px;
+    width: 40%;
+    height: 45px;
+}
+.but:hover {
+    background-color: rgb(133, 35, 10);
+}
+
+.f-24 {
+    font-size: 24px;
+}
+.f-32 {
+    font-size: 32px;
+}
+.f70-14 {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+/* -------------------------------
+    Футер сайта
+    ----------------------------------*/
+
+.footer_blok {
+    margin: 0 auto;
+    max-width: 1850px;
+    width: 84%;
+    align-content: center;
+}
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(00, 163, 136);
+    color: white;
+}
+.slotik {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1850px;
+}
+.column {
+    margin: 20px 10px;
+    flex-direction: column;
+    display: flex;
+}
+.fr-1 {
+    align-self: flex-start;
+}
+.fr-2 {
+    align-self: flex-start;
+}
+
+.fr-3 {
+    align-self: flex-start;
+}
+.dis {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}
+.dis-1 {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.dis-2 {
+    margin: 10px auto 0;
+    display: block;
+    text-align: center;
+}
+.dis-4 {
+    margin: 30px auto 0;
+    display: block;
+    text-align: center;
+}
+.dis-3 {
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.back {
+    background-color: white;
+    padding: 5px;
+}
