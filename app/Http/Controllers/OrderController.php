@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Auth;
 
 class OrderController extends Controller
 {
+    /*
+    * Создание заказа
+    */
     public function upload(Request $request)
     {
         $basketItems = Basket::with('dish')->where('user_id', Auth::id())->get();

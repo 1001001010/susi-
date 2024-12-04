@@ -8,6 +8,9 @@ use Auth;
 
 class BasketController extends Controller
 {
+    /*
+    * Открытие корзины
+    */
     public function index() {
         $basketItems = Basket::with('dish')->where('user_id', Auth::id())->get();
 
@@ -21,6 +24,9 @@ class BasketController extends Controller
         ]);
     }
 
+    /*
+    * Добавление товара в корзину
+    */
     public function upload(Request $request) {
         $validate = $request->validate([
             'id' => 'required|integer|min:1',
@@ -34,6 +40,9 @@ class BasketController extends Controller
         return redirect()->back();
     }
 
+    /*
+    * Удаление товара из корзины
+    */
     public function delete(Request $request) {
         Basket::where('id', $request->position_id)->delete();
 

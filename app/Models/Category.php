@@ -10,6 +10,9 @@ class Category extends Model
         'name',
     ];
 
+    /*
+    * Связь с моделью Dish
+    */
     public function dishes()
     {
         return $this->hasMany(Dish::class);

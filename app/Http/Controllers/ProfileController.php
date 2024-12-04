@@ -13,7 +13,7 @@ use App\Models\{Order};
 class ProfileController extends Controller
 {
     /**
-     * отображение профиля
+     * Отображение профиля
      */
     public function index(Request $request): View
     {
@@ -23,7 +23,7 @@ class ProfileController extends Controller
     }
 
     /**
-     * отображение истории заказов
+     * Отображение истории заказов
      */
     public function history(Request $request): View
     {

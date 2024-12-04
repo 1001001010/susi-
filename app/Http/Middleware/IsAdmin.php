@@ -10,6 +10,9 @@ use Auth;
 class IsAdmin
 {
 
+    /*
+    * Проверка на администратора
+    */
     public function handle(Request $request, Closure $next): Response
     {
         if (Auth::user() and  Auth::user()->is_admin == 1) {

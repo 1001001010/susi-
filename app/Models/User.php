@@ -32,8 +32,19 @@ class User extends Authenticatable
         ];
     }
 
+    /*
+    * Связь с моделью Basket
+    */
     public function baskets()
     {
         return $this->hasMany(Basket::class);
+    }
+
+    /*
+    * Связь с моделью Category
+    */
+    public function categories()
+    {
+        return $this->hasMany(Category::class);
     }
 }

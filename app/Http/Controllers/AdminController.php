@@ -8,12 +8,19 @@ use App\Models\{Category, Dish, Order, OrderItems};
 
 class AdminController extends Controller
 {
+
+    /*
+    * Открытие категорий
+    */
     public function category() {
         return view('admin.category', [
             'categories' => Category::all()
         ]);
     }
 
+    /*
+    * Открытие меню
+    */
     public function menu() {
         return view('admin.menu', [
             'categories' => Category::all(),
@@ -21,6 +28,9 @@ class AdminController extends Controller
         ]);
     }
 
+    /*
+    * Открытие заказов
+    */
     public function orders() {
         $orders = Order::with(['user', 'items.dish'])->orderBy('created_at', 'desc')->get();
 

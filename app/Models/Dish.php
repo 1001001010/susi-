@@ -14,11 +14,17 @@ class Dish extends Model
         'price'
     ];
 
+    /*
+    * Связь с моделью Category
+    */
     public function category()
     {
         return $this->belongsTo(Category::class);
     }
 
+    /*
+    * Связь с моделью Basket
+    */
     public function baskets()
     {
         return $this->hasMany(Basket::class, 'dishes_id');

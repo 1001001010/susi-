@@ -8,12 +8,18 @@ use App\Models\{Category, Dish};
 
 class DishController extends Controller
 {
+    /*
+    * Открытие главной страницы
+    */
     public function index() {
         return view('index', [
             'categories' => Category::with('dishes')->get(),
         ]);
     }
 
+    /*
+    * Добавление блюда
+    */
     public function upload(Request $request) {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
@@ -41,6 +47,9 @@ class DishController extends Controller
         return redirect()->back();
     }
 
+    /*
+    * Поиск по ключевому слову
+    */
     public function search(Request $request) {
         $validated = $request->validate([
             'search' => 'required|string|max:255',

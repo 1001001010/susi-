@@ -12,6 +12,7 @@ class AuthenticationTest extends TestCase
 
     public function test_users_can_authenticate_using_the_login_screen(): void
     {
+        // тест на успешную авторизацию
         $user = User::factory()->create();
 
         $response = $this->post('/login', [
@@ -25,6 +26,7 @@ class AuthenticationTest extends TestCase
 
     public function test_users_can_not_authenticate_with_invalid_password(): void
     {
+        // Тест на ошибку авторизации (Неправильный пароль)
         $user = User::factory()->create();
 
         $this->post('/login', [
