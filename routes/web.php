@@ -28,10 +28,11 @@ Route::middleware(IsAdmin::class)->group(function () {
     Route::get('/admin/categories', [AdminController::class, 'category'])->name('admin.category');
     Route::get('/admin/menu', [AdminController::class, 'menu'])->name('admin.menu');
     Route::get('/admin/orders', [AdminController::class, 'orders'])->name('admin.orders');
-
     Route::post('/admin/categories/upload', [CategoryController::class, 'upload'])->name('category.upload');
-
     Route::post('/admin/dish/upload', [DishController::class, 'upload'])->name('dish.upload');
+    Route::delete('/admin/dish/{id}', [DishController::class, 'delete'])->name('dish.delete');
+    Route::get('/dish/{id}', [DishController::class, 'updateIndex'])->name('dish.updateIndex');
+    Route::patch('/admin/dish/update/{id}', [DishController::class, 'update'])->name('dish.update');
 });
 
 require __DIR__.'/auth.php';

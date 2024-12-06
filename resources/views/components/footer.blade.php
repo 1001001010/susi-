@@ -3,7 +3,7 @@
         <div class="slotik">
             <div class="column fr-1">
                 <div class="dis back">
-                    <img src="media/logo_sushi.png" alt="Suzya_Sishi">
+                    <img src="{{ asset('media/logo_sushi.png') }}" alt="Suzya_Sishi">
                 </div>
                 <div class="dis">
                     <span class="f-24">Ежедневно:</span>

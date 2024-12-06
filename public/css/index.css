@@ -13,6 +13,22 @@ body {
     margin: 0 auto;
 }
 
+.text-svg {
+    color: #d9d9d9;
+}
+
+.w-5 {
+    width: 1.25rem /* 20px */;
+}
+
+.gap-2 {
+    gap: 0.5rem /* 8px */;
+}
+
+.h-5 {
+    height: 1.25rem /* 20px */;
+}
+
 h1 {
     font-size: 32px;
     font-weight: normal;

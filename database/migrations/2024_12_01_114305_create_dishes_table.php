@@ -17,6 +17,7 @@ return new class extends Migration
             $table->text('description');
             $table->text('image');
             $table->integer('price');
+            $table->boolean('is_visible')->default(true);
             $table->unsignedBigInteger('category_id');
             $table->timestamps();
 
